@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+}
+
+.el-menu {
+  border-right: none !important;
+}
+
+.el-aside {
+  transition: width 0.3s;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.main-container .el-aside {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.sidebar {
+  background: #304156;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .el-menu {
+  flex: 1;
+  overflow-y: auto;
+  border-right: none;
+  background: #304156;
+}
+
+.sidebar .el-menu-item,
+.sidebar .el-sub-menu__title {
+  color: #bfcbd9;
+}
+
+.sidebar .el-menu-item:hover,
+.sidebar .el-sub-menu__title:hover {
+  background-color: #263445;
+}
+
+.sidebar .el-menu-item.is-active {
+  color: #409eff;
+  background-color: #263445;
+}
+
+.content-wrapper {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+  background: #f0f2f5;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-card .value {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.stat-card .label {
+  color: #909399;
+}
+
+.income {
+  color: #67c23a;
+}
+
+.expense {
+  color: #f56c6c;
+}
+
+.profit {
+  color: #409eff;
+}
